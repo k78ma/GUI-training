@@ -25,7 +25,7 @@ class GUI:
         root.title('Training GUI')
         root.geometry('605x450')
         root.configure(bg='#DAE0E6')
-        root.resizable(True, True)
+        root.resizable(False, False)
 
         self.notebook = ttk.Notebook(root)
         self.notebook.pack(expand=True)
@@ -419,16 +419,11 @@ class GUI:
 
         help_text = tk.Text(help, height = 16)
 
-        help_text.insert('2.0', 'This is a Text widget demo \n')
-        help_text.insert('2.2', 'TODO: \n')
-        help_text.insert('3.6', '  - Save configs to .txt file \n')
-        help_text.insert('4.6', '  - Tracking configs/file saving information --- global variables\n')
-        help_text.insert('5.6', '  - Saving finished model path to .pth or .ckpt \n')
-        help_text.insert('6.6', '  - Integrate progress bars with config information \n')
-        help_text.insert('7.6', '  - Try to integrate with other model for now? \n')
-        help_text.insert('7.6', '  - Make things prettier \n')
-        help_text.insert('7.6', '  - Put stuff on GitHub/GitLab for version control \n')
+        help_text.insert('2.0', '\n Please refer to the GitHub repository for this application for help: \n \n')
+        help_text.insert('4.2', '\n   https://github.com/k78ma/GUI-training')
         help_text.pack()
+        
+        help_text['state'] = 'disabled'
 
         help.mainloop()
         
