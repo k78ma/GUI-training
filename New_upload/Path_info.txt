@@ -1,0 +1,12 @@
+1. dataset.py, 'GUI_training\Bert_TCN\finance\'
+
+2. main_bert_tcn.py, 'GUI_training\'
+
+3. tcn_model.py, 'GUI_training\Bert_TCN\finance\'
+
+4. tcn_train.py, 'GUI_training\Bert_TCN\finance\'
+
+5. training_example.csv, 'GUI_training\'
+
+
+Note: Please delete the files (two files) in 'GUI-training\Bert_TCN\finance\text_features', since we have a new fake data file. 

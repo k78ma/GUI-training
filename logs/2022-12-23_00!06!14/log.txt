@@ -1,0 +1,71 @@
+INFO:main_bert_tcn:===================== Experiment configuration ========================
+INFO:main_bert_tcn:bert_output.....: 32                                                   
+INFO:main_bert_tcn:bool_labels.....: ''                                                   
+INFO:main_bert_tcn:clip............: 0.35                                                 
+INFO:main_bert_tcn:date_time_labels: 'ProjectStartDate'                                   
+INFO:main_bert_tcn:dropout.........: 0.45                                                 
+INFO:main_bert_tcn:duplicate_labels: 'NoteText'                                           
+INFO:main_bert_tcn:first_pred......: 'revenue_p0'                                         
+INFO:main_bert_tcn:k_size..........: 3                                                    
+INFO:main_bert_tcn:last_pred.......: 'revenue_p5'                                         
+INFO:main_bert_tcn:levels..........: 4                                                    
+INFO:main_bert_tcn:nhid............: 600                                                  
+INFO:main_bert_tcn:ordinal_labels..: 'FinancialMonitoringRating Province NoteType'        
+INFO:main_bert_tcn:output_path.....: '/pub4/kai.ma/results'                               
+INFO:main_bert_tcn:useless_labels..: 'CAAmt IncorporationYear AnimalEthicsProject Employee2000 Employee2001 Employee2002 Employee2003 Employee2004 Employee2005 Employee2006 Employee2007 Employee2008 Employee2009 Employee2010 Employee2011 Employee2012 Employee2013 Employee2014 Employee2015 Employee2016 Employee2017 Employee2018 Employee2019 Employee2020 Employee2021 Employee2022 EmployeeGrowthPct2000 EmployeeGrowthPct2001 EmployeeGrowthPct2002 EmployeeGrowthPct2003 EmployeeGrowthPct2004 EmployeeGrowthPct2005 EmployeeGrowthPct2006 EmployeeGrowthPct2007 EmployeeGrowthPct2008 EmployeeGrowthPct2009 EmployeeGrowthPct2010 EmployeeGrowthPct2011 EmployeeGrowthPct2012 EmployeeGrowthPct2013 EmployeeGrowthPct2014 EmployeeGrowthPct2015 EmployeeGrowthPct2016 EmployeeGrowthPct2017 EmployeeGrowthPct2018 EmployeeGrowthPct2019 EmployeeGrowthPct2020 EmployeeGrowthPct2021 EmployeeGrowthPct2022 HumanEthicsProject InternationalProject OrgID OrgName OrganizationID ProjectCompleteDate ProjectType'
+INFO:main_bert_tcn:=======================================================================
+INFO:main_bert_tcn:device is set for cuda
+INFO:main_bert_tcn:Starting data preprocessing ...
+INFO:root:Loading examples from cached file Bert_TCN/finance/text_features/cached_text_examples
+INFO:root:Loading features from cached file Bert_TCN/finance/text_features/cached_text_features
+INFO:main_bert_tcn:Dataset has been extraced and preprocessed
+INFO:Bert_TCN.finance.tcn_train:epoch number: 0
+INFO:Bert_TCN.finance.tcn_train:epoch number: 1
+INFO:Bert_TCN.finance.tcn_train:epoch number: 2
+INFO:Bert_TCN.finance.tcn_train:epoch number: 3
+INFO:Bert_TCN.finance.tcn_train:epoch number: 4
+INFO:Bert_TCN.finance.tcn_train:epoch number: 5
+INFO:Bert_TCN.finance.tcn_train:epoch number: 6
+INFO:Bert_TCN.finance.tcn_train:epoch number: 7
+INFO:Bert_TCN.finance.tcn_train:epoch number: 8
+INFO:Bert_TCN.finance.tcn_train:epoch number: 9
+INFO:Bert_TCN.finance.tcn_train:epoch number: 10
+INFO:Bert_TCN.finance.tcn_train:epoch number: 11
+INFO:Bert_TCN.finance.tcn_train:epoch number: 12
+INFO:Bert_TCN.finance.tcn_train:epoch number: 13
+INFO:Bert_TCN.finance.tcn_train:epoch number: 14
+INFO:Bert_TCN.finance.tcn_train:epoch number: 15
+INFO:Bert_TCN.finance.tcn_train:epoch number: 16
+INFO:Bert_TCN.finance.tcn_train:epoch number: 17
+INFO:Bert_TCN.finance.tcn_train:epoch number: 18
+INFO:Bert_TCN.finance.tcn_train:epoch number: 19
+INFO:Bert_TCN.finance.tcn_train:epoch number: 20
+INFO:Bert_TCN.finance.tcn_train:epoch number: 21
+INFO:Bert_TCN.finance.tcn_train:epoch number: 22
+INFO:Bert_TCN.finance.tcn_train:epoch number: 23
+INFO:Bert_TCN.finance.tcn_train:epoch number: 24
+INFO:Bert_TCN.finance.tcn_train:epoch number: 25
+INFO:Bert_TCN.finance.tcn_train:epoch number: 26
+INFO:Bert_TCN.finance.tcn_train:epoch number: 27
+INFO:Bert_TCN.finance.tcn_train:epoch number: 28
+INFO:Bert_TCN.finance.tcn_train:epoch number: 29
+INFO:Bert_TCN.finance.tcn_train:epoch number: 30
+INFO:Bert_TCN.finance.tcn_train:epoch number: 31
+INFO:Bert_TCN.finance.tcn_train:epoch number: 32
+INFO:Bert_TCN.finance.tcn_train:epoch number: 33
+INFO:Bert_TCN.finance.tcn_train:epoch number: 34
+INFO:Bert_TCN.finance.tcn_train:epoch number: 35
+INFO:Bert_TCN.finance.tcn_train:epoch number: 36
+INFO:Bert_TCN.finance.tcn_train:epoch number: 37
+INFO:Bert_TCN.finance.tcn_train:epoch number: 38
+INFO:Bert_TCN.finance.tcn_train:epoch number: 39
+INFO:Bert_TCN.finance.tcn_train:epoch number: 40
+INFO:Bert_TCN.finance.tcn_train:epoch number: 41
+INFO:Bert_TCN.finance.tcn_train:epoch number: 42
+INFO:Bert_TCN.finance.tcn_train:epoch number: 43
+INFO:Bert_TCN.finance.tcn_train:epoch number: 44
+INFO:Bert_TCN.finance.tcn_train:epoch number: 45
+INFO:Bert_TCN.finance.tcn_train:epoch number: 46
+INFO:Bert_TCN.finance.tcn_train:epoch number: 47
+INFO:Bert_TCN.finance.tcn_train:epoch number: 48
+INFO:Bert_TCN.finance.tcn_train:epoch number: 49
