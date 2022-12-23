@@ -80,7 +80,7 @@ class GUI:
         self.outdirInputBox = ttk.Entry(self.main_frame, textvariable=self.outdirInput, width=51)
         self.outdirInputBox.place(x=150, y = 120)
 
-        self.outdirButton = tk.Button(self.main_frame, text = 'Browse', command=lambda: self.button_action('Choose directory'), bg='#283B5B', fg='white')
+        self.outdirButton = tk.Button(self.main_frame, text = 'Browse', command=lambda: self.button_action('Choose log directory'), bg='#283B5B', fg='white')
         self.outdirButton.place(x = 530, y = 117.5, anchor = 'nw', width=55)
         
         # Model output
@@ -91,7 +91,7 @@ class GUI:
         self.outModel = tk.Entry(self.main_frame, textvariable=self.outModelInput, width=51)
         self.outModel.place(x=150, y = 160)
 
-        self.outModelButton = tk.Button(self.main_frame, text = 'Save', command=lambda: self.button_action('Save name'), bg='#283B5B', fg='white')
+        self.outModelButton = tk.Button(self.main_frame, text = 'Browse', command=lambda: self.button_action('Choose model directory'), bg='#283B5B', fg='white')
         self.outModelButton.place(x = 530, y = 157.5, anchor = 'nw', width=55)
         
 
@@ -343,33 +343,45 @@ class GUI:
         #plt.xticks(np.arange(min(x), max(x)+1, 1.0))
 
 
-    def select_file(self):
+    def select_data_file(self):
         filetypes = (
         ('text files', '*.csv'),
         ('All files', '*.*')
         )
 
-        self.filename = fd.askopenfilename(
+        self.data_filename = fd.askopenfilename(
             title='Open a file',
             filetypes=filetypes)
         
-        self.uploadInputBox.insert(0, str(self.filename))
+        self.uploadInputBox.insert(0, str(self.data_filename))
 
         showinfo(
             title='Selected File',
-            message=self.filename
+            message=self.data_filename
         )
 
-    def select_dir(self):
+    def select_log_dir(self):
 
-        self.dirname = fd.askdirectory(
+        self.log_dirname = fd.askdirectory(
             title='Open a file')
             
-        self.outdirInputBox.insert(0, str(self.dirname))
+        self.outdirInputBox.insert(0, str(self.log_dirname))
 
         showinfo(
             title='Selected File',
-            message=self.dirname
+            message=self.log_dirname
+        )
+        
+    def select_model_dir(self):
+
+        self.model_dirname = fd.askdirectory(
+            title='Open a file')
+            
+        self.outModel.insert(0, str(self.model_dirname) + "/growth_model.pth")
+
+        showinfo(
+            title='Selected File',
+            message=self.model_dirname
         )
 
 
@@ -460,9 +472,11 @@ class GUI:
         if args == 'Configure':
             self.param_window()
         if args == 'Upload':
-            self.select_file()
-        if args == 'Choose directory':
-            self.select_dir()
+            self.select_data_file()
+        if args == 'Choose log directory':
+            self.select_log_dir()
+        if args == 'Choose model directory':
+            self.select_model_dir()
         if args == 'Help':
             self.help_window()
         if args == 'PGI':
