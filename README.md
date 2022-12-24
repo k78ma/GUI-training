@@ -1,4 +1,4 @@
-# Training GUI Documentation
+# Training GUI Documentation.
 **Important:** `"/Bert_TCN/finance/pretrain/bert/base-uncased/pytorch_model.bin"` is missing (too large to upload to GitHub.)
 
 ## Requirements:
