@@ -7,8 +7,8 @@ Details on how to use this requirements file to create an environment, see below
 
 ## Starting the GUI through terminal
 1. Clone the repository.
-2. Create a conda environment named `gui` with `conda create --name gui`.
-3. Activate the environment using `conda gui`.
+2. Create a conda environment named `NRC_training` with `conda create -n NRC_training python=3.8`.
+3. Activate the environment using `activate NRC_training`.
 4. Install the required packages using `pip install -r requirements.txt`
 4. Switch to the correct directory with `cd GUI-training`.
 5. Make sure you've added the missing file `"/Bert_TCN/finance/pretrain/bert/base-uncased/pytorch_model.bin"`.
